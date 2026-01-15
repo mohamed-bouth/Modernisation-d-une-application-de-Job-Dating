@@ -1,0 +1,19 @@
+{
+    "name": "pc/job_dating",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Models\\": "app/Models/",
+            "Core\\": "app/Core/",
+            "Controllers\\": "app/Controllers/",
+            "Auth\\": "app/Views/Auth",
+            "Main\\": "app/Views/Main"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamed"
+        }
+    ],
+    "require": {}
+}
