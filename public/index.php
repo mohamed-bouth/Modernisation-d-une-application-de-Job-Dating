@@ -17,10 +17,8 @@ if($_SERVER['REQUEST_URI'] === '/'){
 
     $router->get("/login",[AuthController::class , 'login']);
     $router->post("/login",[AuthController::class , 'login']);
-
-    $router->post("/add",function(){
-            print_r($_POST);
-    });
-
+    $router->get("/register",[AuthController::class , 'register']);
+    $router->post("/register",[AuthController::class , 'register']);
+    $router->get("/dashboard",[AuthController::class , 'dashboard']);
     $router->dispatch();
 ?>

@@ -2,9 +2,6 @@
 
 namespace Core;
 
-
-// define("BASE_PATH" , "/Job_dating/public");
-
 class Router
 {
 
@@ -27,7 +24,7 @@ class Router
     public function dispatch()
     {
         $uri = $_SERVER['REQUEST_URI'];
-        // $uri = str_replace(BASE_PATH, '', $uris);  
+
         $method = $_SERVER['REQUEST_METHOD'];
 
 
