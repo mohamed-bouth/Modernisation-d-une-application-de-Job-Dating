@@ -1,4 +1,6 @@
-
+<?Php 
+use Core\Security;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +11,7 @@
 <body>
     <h1>register</h1>
     <form action="/register" method="post">
+        <input type="hidden" name="csrf_token" value="<?= Security::generateCSRFToken() ?>">
         <input name="firstName" type="text">
         <input name="lastName" type="text">
         <input name="email" type="text">

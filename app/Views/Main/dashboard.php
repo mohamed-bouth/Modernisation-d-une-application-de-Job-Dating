@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +7,6 @@
 </head>
 <body>
     <h1>dashboard</h1>
+    <h2>hello <?= $_SESSION['userFirstName'] . ' ' . $_SESSION['userLastName'] ?></h2>
 </body>
 </html>

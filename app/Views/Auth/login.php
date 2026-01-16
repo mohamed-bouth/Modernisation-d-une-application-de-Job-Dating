@@ -1,4 +1,6 @@
-
+<?Php 
+use Core\Security;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,8 @@
 </head>
 <body>
     <form action="/login" method="Post">
-        <input name="name" type="text">
+        <input type="hidden" name="csrf_token" value="<?= Security::generateCSRFToken() ?>">
+        <input name="email" type="text">
         <input name="password" type="password">
         <button type="submit">login</button>
     </form>
