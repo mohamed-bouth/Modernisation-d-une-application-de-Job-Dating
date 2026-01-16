@@ -11,7 +11,6 @@ class User extends BaseModel {
     {
 
         if ($key === 'password') {
-            $value = password_hash($value, PASSWORD_BCRYPT);
             $key = 'password_hash';
         }
         
